@@ -26,7 +26,8 @@ export class PropertyListComponent implements OnInit {
       data=>{
       this.properties = data;
       //console.log(data);
-      console.log(this.activatedRoute.snapshot.url.toString());
+      //console.log(this.activatedRoute.snapshot.url.toString());  //y3ni el url feh value
+      //console.log(this.SellRent)
       },error => {
         console.log('httperror');
         console.log(error);
