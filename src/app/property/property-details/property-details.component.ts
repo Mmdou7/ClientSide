@@ -14,7 +14,7 @@ export class PropertyDetailsComponent implements OnInit {
   ngOnInit() {
     this.propertyId = Number(this.activatedRoute.snapshot.params['id']) //nfs case sensitive of routing
     
-    this.activatedRoute.params.subscribe(
+    this.activatedRoute.params.subscribe(  //params return observable that means the function will not execute immediately, just execute with changes 
       (params)=>{
         this.propertyId = Number(params['id'])
       }
