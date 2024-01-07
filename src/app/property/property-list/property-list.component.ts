@@ -25,9 +25,9 @@ export class PropertyListComponent implements OnInit {
     this.housuingService.getAllProperties(this.SellRent).subscribe(
       data=>{
       this.properties = data;
-      //console.log(data);
-      //console.log(this.activatedRoute.snapshot.url.toString());  //y3ni el url feh value
-      //console.log(this.SellRent)
+      // console.log(data);
+      // console.log(this.activatedRoute.snapshot.url.toString());  //y3ni el url feh value
+      // console.log(this.SellRent)
       },error => {
         console.log('httperror');
         console.log(error);

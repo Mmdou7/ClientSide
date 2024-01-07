@@ -18,6 +18,7 @@ import { UserRegisterComponent } from './user/user-register/user-register.compon
 import { UserServiceService } from './_services/user-service.service';
 import { AlertifyService } from './_services/alertify.service';
 import { AuthService } from './_services/auth.service';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 const appRoutes : Routes =[
   {path:'', component: PropertyListComponent},
@@ -26,7 +27,7 @@ const appRoutes : Routes =[
   {path:'property-Details/:id' , component: PropertyDetailsComponent},
   {path:'user/register' , component: UserRegisterComponent },
   {path:'user/login' , component: UserLoginComponent },
-  {path:'**' , component:PropertyListComponent}
+  {path:'**' , component:NotFoundComponent}
 ]
 
 
@@ -40,6 +41,7 @@ const appRoutes : Routes =[
     PropertyDetailsComponent,
     UserLoginComponent,
     UserRegisterComponent,
+    NotFoundComponent,
    ],
   imports: [
     BrowserModule,
